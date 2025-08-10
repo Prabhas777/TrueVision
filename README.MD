@@ -22,7 +22,7 @@ Data Loading & Augmentation: Keras ImageDataGenerator
 Optional (real-time & explainability): OpenCV, Grad-CAM
 
 Repository Structure
-'''
+```
 facial_emotion_recognition/
 │
 ├── src/
@@ -46,7 +46,7 @@ facial_emotion_recognition/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-'''
+```
 Dataset Layout
 This project expects a FER-style folder layout. If you use FER-2013 or a similar dataset, organize it like:
 
