@@ -21,7 +21,7 @@ Data Loading & Augmentation: Keras ImageDataGenerator
 
 Optional (real-time & explainability): OpenCV, Grad-CAM
 
-Repository Structure
+##Repository Structure
 
 facial_emotion_recognition/
 │
