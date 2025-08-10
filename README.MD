@@ -50,7 +50,7 @@ facial_emotion_recognition/
 Dataset Layout
 This project expects a FER-style folder layout. If you use FER-2013 or a similar dataset, organize it like:
 
-'''
+```
 DATASET_ROOT/
 ├── train/
 │   ├── angry/      *.png|*.jpg
@@ -64,8 +64,9 @@ DATASET_ROOT/
 │   └── ...
 └── test/           # optional but recommended for final evaluation
     └── ...
+```
 If val/ is missing, the script will create a validation split from train/ (default 20%).
-'''
+
 Setup
 
 # Create and activate a virtual environment
@@ -80,7 +81,7 @@ pip install -r requirements.txt
 On Apple Silicon, you may prefer tensorflow-macos instead of tensorflow.
 
 Train & Evaluate
-
+```
 # From repo root
 python src/model_training.py \
   --data_root /path/to/DATASET_ROOT \
@@ -92,6 +93,7 @@ python src/model_training.py \
   --l2 1e-4 \
   --dropout 0.5
 Outputs (saved in --out_dir)
+```
 best_model.h5 — best checkpoint by validation accuracy
 
 accuracy.png, loss.png — training curves
@@ -138,7 +140,7 @@ python src/data_preprocessing.py --data_root /path/to/DATASET_ROOT --img_size 48
 python src/model_training.py --data_root /path/to/DATASET_ROOT --out_dir runs/vgg13_fer --epochs 20
 Requirements (pip)
 See requirements.txt. Typical baseline:
-
+```
 tensorflow
 numpy
 matplotlib
@@ -148,6 +150,6 @@ Pillow
 tqdm
 License
 Add your preferred license (e.g., MIT) if you plan to make this public/open-source.
-
+```
 Acknowledgments
 This project draws on standard FER practices and CNN architectures (e.g., VGG). Datasets like FER-2013 or RAF-DB are commonly used for research and benchmarking.
